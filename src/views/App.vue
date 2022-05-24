@@ -1,17 +1,20 @@
 <template>
-  <div class="app-style">
-    I am App
+  <div class="app-color">
+    <uyu-table></uyu-table>
   </div>
 </template>
 
 <script>
+import UyuTable from "../components/UyuTable";
+
 export default {
-  name: `App`
+  name: `App`,
+  components: {UyuTable},
 }
 </script>
 
-<style scoped>
-.app-style{
-  color: aqua;
+<style lang="scss">
+.app-color{
+  color: darkgreen;
 }
 </style>
